@@ -9,5 +9,4 @@ If a secret is exposed, revoke or rotate it first, then clean Git history.
 
 ## Local checks
 
-This repository uses pre-commit and pre-push checks for sensitive files, MCP
-configuration, secret scanning, static analysis, and dependency auditing.
+Run the documented offline unittest suite with synthetic data. Local hooks are not installed automatically. Agent instructions are not an OS sandbox; full-trust processes retain the owner’s permissions.
