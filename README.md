@@ -6,13 +6,14 @@ Start with [SKILL.md](SKILL.md), the [work contract](references/work-contract.md
 
 ## Installation
 
-Copy this complete repository into your agent’s supported skill directory, or use:
+Copy a reviewed full commit into your agent’s supported skill directory. For the reviewed runtime snapshot:
 
 ```sh
-npx skills add zilbertov/workflow-herdr --skill workflow-herdr
+git clone --no-checkout https://github.com/zilbertov/workflow-herdr.git workflow-herdr
+git -C workflow-herdr checkout --detach d80643cc95e3888f5d99dc1c6e9dd203c079aca7
 ```
 
-The Skills CLI is an external installer. Manual copying does not install dependencies. Python 3.12+, Herdr and your chosen coding CLIs are prerequisites for runtime orchestration. The example model IDs must be checked against your actual CLI inventory.
+Use a local copy for ordinary invocations. Do not run clone, pull or an unversioned package installer from per-task hooks; review updates separately. Manual copying does not install dependencies. Python 3.12+, Herdr and your chosen coding CLIs are prerequisites for runtime orchestration. The example model IDs must be checked against your actual CLI inventory.
 
 ## Intentional full trust
 
