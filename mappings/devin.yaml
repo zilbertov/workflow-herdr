@@ -1,0 +1,16 @@
+# Default: inherit the installed Devin CLI permission policy.
+# Owner-scoped full trust is applied by scripts/trust_policy.py, not project YAML.
+args:
+  - "--model"
+  - "{model}"
+  - "--"
+
+# Add a model here only when it needs different arguments from the default.
+# models:
+#   model-id:
+#     args:
+#       - "--permission-mode"
+#       - "dangerous"
+#       - "--model"
+#       - "{model}"
+#       - "--"

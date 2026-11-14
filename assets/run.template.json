@@ -1,0 +1,19 @@
+{
+  "change": "",
+  "volume": "",
+  "graph": "",
+  "project": ".",
+  "herdr_session": "default",
+  "machine": "local",
+  "workspace_id": "",
+  "tab_id": "",
+  "homes": {},
+  "created": { "workspaces": [], "tabs": [], "panes": [] },
+  "nodes": {},
+  "roles": {
+    "brain": { "pane_id": "", "agent": null, "title": "Brain" },
+    "orchestrator": { "pane_id": "", "agent": "", "title": "Orchestrator" },
+    "dispatchers": [],
+    "workers": []
+  }
+}

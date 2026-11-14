@@ -1,0 +1,36 @@
+# Project-local Herdr manifest: .herdr/workflow.yaml
+# Mapping keys merge recursively with the global workflow.yaml.
+# Scalars and lists replace their global values. Omitted keys keep defaults.
+# Canonical keys are harnesses, nodes, graphs. roles/volumes/clis still work.
+
+# nodes:
+#   worker:
+#     harness: grok
+#     model: grok-4.6
+#     effort: high
+
+nodes:
+  orchestrator:
+    model: gpt-5.6-luna
+    effort: max
+    # brief: .herdr/briefs/orchestrator.md
+  dispatcher:
+    model: gpt-5.6-luna
+    effort: high
+  worker:
+    harness: devin
+    model: swe2
+    effort: max
+
+# Old overlay shape still merges:
+# roles:
+#   worker:
+#     cli: grok
+#     model: grok-4.6
+# graphs:
+#   medium:
+#     nodes: [brain, orchestrator, dispatcher, worker]
+# guards:
+#   large_min_runnable_tasks: 3
+# watch:
+#   prompt_wait: true
